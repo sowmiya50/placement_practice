@@ -1,0 +1,114 @@
+perfect
+{
+  1.  /*int num;
+    scanf("%d",&num);
+    int itr;
+    int sum=0;
+    for(itr=1;itr<num;itr+=1)
+    {
+    if(num%itr==0)
+      sum+=itr;
+    }
+    printf("%d\n",sum);
+    if(num==sum)
+        printf("perfect");
+    else if(sum>num)
+            printf("abundant");
+    else
+        printf("deficient");*/
+
+prime or not
+
+ 2. /*int num,itr;
+  scanf("%d",&num);
+  if(num==1||num==2||num==3)
+    printf("prime");
+  else
+  {
+   int count=0;
+   for(itr=2;itr<=num/2;itr+=1)
+   {
+       if(num%itr==0)
+        count++;
+   }
+   if(count==0)
+    printf("prime");
+   else
+    printf("not");*/
+
+break
+  3.  int num;
+   scanf("%d",&num);
+   for(int itr=1;itr<=num;itr+=1)
+   {
+       if(itr==5)
+        break;
+        printf("%d",itr);
+   }
+  }
+
+#amicable pair
+
+4.int a,b;
+scanf("%d%d",&a,&b);
+int itr;
+int sum1=0,sum2=0;
+for(itr=1;itr<=a/2;itr+=1)
+{
+    if(a%itr==0)
+       sum1+=itr;
+}
+for(itr=1;itr<=b/2;itr+=1)
+{
+    if(b%itr==0)
+      sum2+=itr;
+
+}
+if(sum2==a&&sum1==b)
+    printf("amicable");
+else
+    printf("not");
+
+pattern
+
+5. /* int num,row,col;
+    scanf("%d",&num);
+    for(row=1;row<=num;row+=1)  //increment
+    {
+        for(col=1;col<=row;col+=1)
+            printf(" * ");
+           printf("\n");
+    }
+    for(row=num;row>=1;row-=1)  //decrement
+    {
+        for(col=1;col<=row;col+=1)
+            printf(" * ");
+        printf("\n");
+    }
+    //both inc to dec */
+
+
+
+6. pattern1
+
+int num,row,space,star;
+    scanf("%d",&num);
+    for(row=1;row<=num;row+=1)  //increment
+    {
+      for(space=1;space<=num-row;space+=1)
+          printf("   ");
+      for(star=1;star<=(row*2)-1;star+=1)
+          printf(" * ");
+          printf("\n");
+    } 
+
+7.number 
+int num,row,col;
+    scanf("%d",&num);
+ int value=1;
+    for(row=1;row<=num;row++)
+    {
+        for(col=1;col<=row;col++)
+            printf(" %d ",value++);
+        printf("\n");
+    }   
