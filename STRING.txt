@@ -1,0 +1,52 @@
+                            STRING
+vowels in a string
+
+int main()
+{
+    char str[100];
+    scanf("%s",&str);
+    int count=0,itr;
+    for(itr=0;str[itr]!='\0';itr+=1)
+    {
+        if(str[itr]=='a'|| str[itr]=='e'|| str[itr]=='o'|| str[itr]=='i'|| str[itr]=='u'|| str[itr]=='A'|| str[itr]=='E'|| str[itr]=='I'|| str[itr]=='O'|| str[itr]=='U')
+            count++;
+    }
+printf("%d",count);
+
+    return 0;
+}
+
+output
+
+Ramakrishna
+4
+
+FOUNDING A CHAR IN STRING
+
+int main()
+{
+    char str[100];
+    scanf("%s\n",&str);
+    int count=0,itr;
+    char key_char;
+    scanf("%c",&key_char);
+    for(itr=0;str[itr];itr+=1)
+    {
+     if(str[itr]==key_char)
+            break;
+    }
+    if(str[itr]==key_char)
+        printf("found");
+    else
+        printf("not found");
+    return 0;
+}
+ OUTPUT
+apple
+f
+not found
+
+dog
+ofound
+
+
