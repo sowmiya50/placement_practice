@@ -1,0 +1,93 @@
+                  pointers
+
+
+#include<stdio.h>
+int main()
+{
+    /*int a;
+    scanf("%d",&a);
+    int *ptr;
+    ptr =&a;
+    printf("a is %d\n",a);
+    printf("pointer value %d\n",*ptr);
+    printf("memory value of ptr %u\n",ptr);
+    printf("memory a %u\n",&a);
+    printf("memory ptr %u\n",&ptr);*/
+
+    /*char ch='A';
+    char *ptr;
+    ptr= &ch;
+    printf("%c\n",*ptr);
+    printf("%d\n",ptr);
+    printf("%d\n",ptr+2);
+    printf("sizeof %d\n",sizeof(ptr));
+    printf("sizeof %d\n",sizeof(ptr+2));*/
+
+    /*int a=10;
+    int *ptr,**ptr1;
+    ptr =&a;
+    ptr1 =&ptr;
+    printf("the a value %d\n",a);
+    printf("address %u\n",ptr);
+    printf("value of ptr %d\n",*ptr);
+    printf("adress of ptr %u\n",&ptr);
+    printf("value of ptr1 %d\n",**ptr1);
+    printf("memory of ptr1 %u\n",&ptr1);*/
+    
+    
+    
+}
+
+
+
+                                     ARRAY
+
+
+#include<stdio.h>
+int main()
+{
+int size,even=0,odd=0;
+    scanf("%d", &size);
+    int arr[size];
+    for(int itr=0;itr<size;itr++)
+        scanf("%d",&arr[itr]);
+    for(int itr=0;itr<size;itr++)
+    {
+        if(arr[itr]%2==0)
+           even++;
+         else
+            odd++;
+    }
+    printf("even count= %d\n",even);
+    printf("odd count= %d\n",odd);
+}
+
+
+
+
+left rotation
+
+
+#include<stdio.h>
+int main()
+{
+int size,itr;
+    scanf("%d", &size);
+    int arr[size];
+    for(int itr=0;itr<size;itr++)
+        scanf("%d ",&arr[itr]);
+    int temp;
+    int count;
+    scanf("%d",&count);
+    for(int c=1;c<=count;c++)
+    {
+      temp=arr[0];
+    for(itr=0;itr<size-1;itr+=1)
+        arr[itr]=arr[itr+1];
+      arr[size-1]=temp;
+
+    }
+   for(itr=0;itr<size;itr++)
+    printf("%d",arr[itr]);
+ return 0;
+}
